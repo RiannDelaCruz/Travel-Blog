@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans:ital@1&family=Nunito:ital,wght@0,200;1,200&family=Odibee+Sans&family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation style*/
+.navbar {
+    width: 100%;
+    background: #0f52ba;
+    padding: 12px 0;
+    //transition: all 0.3s ease;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    //top,right,bottom,left
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #0b1e33;
+    font-family: 'Mate SC', serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+.navbar .logo span {
+    color: #00BFFF;
+    font-family: 'Mate SC', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    padding: 0 0 0 400px;
+}
+
+.navbar .menu li {
+    padding: 0 15px;
+}
+
+.navbar .menu li a {
+    display: flex;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+    color: aqua;
+}
+
+.navbar form {
+    display: flex;
+    height: 30px;
+    background: white;
+    border: 2px solid #457bb6;
+}
+
+.navbar form .search-data {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: aqua;
+    font-weight: 500;
+    background: #0f52ba;
+    border: none;
+}
+
+.navbar form button {
+    padding: 0 5px;
+    color: gray;
+    background: aqua;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+/*Home navigation*/
+.home {
+    background: #b9deff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    //padding: 15px 0 0 150px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    color: #0f52ba;
+}
+
+.next {
+    right: 0px;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    border-color: #0f52ba;
+}
+
+.text .text1 {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 40%;
+    left: 30%;
+    font-size: 50px;
+    font-family: 'Ink Free';
+}
+
+.text .text2 {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 20%;
+    font-size: 50px;
+    font-family: 'Ink Free';
+}
+
+.text .text3 {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 60%;
+    left: 30%;
+    font-size: 50px;
+    font-family: 'Ink Free';
+}
+
+.text1 span {
+    color: crimson;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.text2 span {
+    color: crimson;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.text3 span {
+    color: crimson;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+
+/*Start CSS for content*/
+
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Geneva', Verdana, sans-serif;
+    color: aqua;
+}
+
+.title h2 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Geneva', Verdana, sans-serif;
+    color: black;
+    padding: 50px;
+}
+
+.sub h4 {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Geneva', Verdana, sans-serif;
+    color: dimgray;
+}
+
+.abt-content ul img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.abt-content ul p {
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+}
+
+/*Start CSS for About*/
+.about {
+    width: 80%;
+    margin: auto;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Geneva', Verdana, sans-serif;
+    color: aqua;
+    padding: 50px 0 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content .column-left {
+    width: 30%;
+    margin-left: 100px;
+}
+
+.column-left img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-content .column-right {
+    width: 60%;
+}
+
+.about-content .column-right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-content .column-right .text span {
+    color: #00BFFF;
+    font-size: 30px;
+}
+
+.about-content .column-right p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+/*contact*/
+.contact {
+    margin: 100px auto;
+    width: 50%;
+    height: 50%;
+    background-image: url(Travel/c1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+}
+
+.contact h1 {
+    color: white;
+    margin-bottom: 40px;
+    padding: 0
+}
+
+.contact h3 {
+    display: inline-block;
+    color: crimson;
+    font-weight: 500;
+    padding: 2px 20px;
+    font-size: 25px;
+}
+
+/*CSS for footer*/
+.footer {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.socialMedia {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media1 {
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.media1 img {
+    width: 0;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+.media1 li a {
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+}
+
+.media1 li a:hover {
+    color: aqua;
+}
+
+.footer p {
+    background: #0f52ba;
+}
+
+.footer p span {
+    color: white;
+}
+
+.footer p a {
+    color: aqua;
+}
+
+.footer p a:hover {
+    color: white;
+}
+
+.footer .fas {
+    color: crimson;
+}
+
